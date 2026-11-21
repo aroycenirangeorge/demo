@@ -1701,11 +1701,11 @@ button, input, select, textarea {
 
           <div class="ba-slider" id="ba-slider" aria-label="Before and after renovation comparison slider">
             <div class="ba-image ba-after">
-              <img data-asset="projectAfter" src="assets/images/projects/after-placeholder.svg" alt="Completed Turnkey Interior Space" loading="lazy" />
+              <img data-asset="projectAfter" src="assets/images/projects/after-placeholder.svg" alt="Illustrative completed interior transformation placeholder" loading="lazy" />
               <span class="ba-badge ba-badge-after">AFTER COMPLETION</span>
             </div>
             <div class="ba-image ba-before" id="ba-before-layer">
-              <img data-asset="projectBefore" src="assets/images/projects/before-placeholder.svg" alt="Bare Shell Site Before Fit-Out" loading="lazy" />
+              <img data-asset="projectBefore" src="assets/images/projects/before-placeholder.svg" alt="Illustrative bare-shell site before fit-out placeholder" loading="lazy" />
               <span class="ba-badge ba-badge-before">BEFORE / SHELL STATE</span>
             </div>
             <input type="range" min="0" max="100" value="100" class="ba-range" id="ba-range" aria-label="Comparison slider percentage" />
@@ -2155,6 +2155,32 @@ function withAssetCache(path) {
   return `${path}?v=${assetCacheKey}`;
 }
 
+const assetFallbacks = {
+  logoLight: "assets/images/branding/logo-placeholder.svg",
+  favicon: "assets/images/branding/favicon-placeholder.svg",
+  heroMain: "assets/images/hero/hero-main-placeholder.svg",
+  aboutCompany: "assets/images/about/company-placeholder.svg",
+  aboutTeam: "assets/images/about/team-placeholder.svg",
+  aboutFounder: "assets/images/about/founder-placeholder.svg",
+  residential01: "assets/images/residential/project-01-placeholder.svg",
+  residential02: "assets/images/residential/project-02-placeholder.svg",
+  commercial01: "assets/images/commercial/office-01-placeholder.svg",
+  commercial02: "assets/images/commercial/office-02-placeholder.svg",
+  kitchen01: "assets/images/kitchens/kitchen-01-placeholder.svg",
+  projectBefore: "assets/images/projects/before-placeholder.svg",
+  projectAfter: "assets/images/projects/after-placeholder.svg"
+};
+
+function attachAssetFallback(img, fallbackPath) {
+  if (!img || !fallbackPath) return;
+  img.addEventListener("error", function handleImgError() {
+    this.removeEventListener("error", handleImgError);
+    if (!this.src.endsWith(fallbackPath) && !this.src.includes(`${fallbackPath}?`)) {
+      this.src = withAssetCache(fallbackPath);
+    }
+  });
+}
+
 /**
  * Hydrates all [data-asset] images with paths from siteAssets
  * and attaches graceful fallback handling to prevent broken image icons.
@@ -2166,10 +2192,7 @@ function hydrateSiteAssets() {
     if (siteAssets[key]) {
       el.src = withAssetCache(siteAssets[key]);
     }
-    el.addEventListener("error", function handleImgError() {
-      this.removeEventListener("error", handleImgError);
-      this.src = withAssetCache("assets/images/hero/hero-main-placeholder.png");
-    });
+    attachAssetFallback(el, assetFallbacks[key]);
   });
 
   // Update footer year
@@ -2216,9 +2239,9 @@ const portfolioProjects = [
     tags: ["commercial", "corporate-offices", "interior-fitouts"],
     categoryLabel: "Corporate Office & Turnkey Fit-Out",
     client: "LS Project",
-    status: "COMPLETED PROJECT",
+    status: "ILLUSTRATIVE PROJECT ASSET",
     coverImage: siteAssets.commercial01,
-    gallery: [siteAssets.commercial01, siteAssets.commercial02],
+    gallery: [siteAssets.commercial01],
     excerpt: "Open-plan agile workspace, executive cabins, acoustic meeting pods, and integrated MEP services.",
     description: "A multi-zone corporate workspace featuring ergonomic workstation clusters, glazed boardrooms, acoustic baffling, and energy-efficient lighting.",
     scopeOfWork: "Space planning, drywall partitions, modular workstations, HVAC ducting, structured cabling, and custom reception joinery.",
@@ -2232,9 +2255,9 @@ const portfolioProjects = [
     tags: ["commercial", "corporate-offices", "interior-fitouts"],
     categoryLabel: "Commercial Interiors",
     client: "LS Project",
-    status: "COMPLETED PROJECT",
+    status: "ILLUSTRATIVE PROJECT ASSET",
     coverImage: siteAssets.commercial02,
-    gallery: [siteAssets.commercial02, siteAssets.commercial01],
+    gallery: [siteAssets.commercial02],
     excerpt: "Flexible collaborative lounges, private team suites, cafeteria, and acoustic conference rooms.",
     description: "A commercial workspace emphasizing durability, modular adaptability, and hospitality-grade common areas.",
     scopeOfWork: "Turnkey interior fit-out, custom banquette seating, acoustic ceilings, pantry build-out, and lighting automation.",
@@ -2248,9 +2271,9 @@ const portfolioProjects = [
     tags: ["residential"],
     categoryLabel: "Residential Construction & Interiors",
     client: "LS Project",
-    status: "COMPLETED PROJECT",
+    status: "ILLUSTRATIVE PROJECT ASSET",
     coverImage: siteAssets.residential01,
-    gallery: [siteAssets.residential01, siteAssets.residential02, siteAssets.kitchen01],
+    gallery: [siteAssets.residential01, siteAssets.residential02],
     excerpt: "Ground-up residential construction with custom living spaces, bedrooms, and modular kitchen.",
     description: "An end-to-end residential project delivered from the structural frame through bespoke interior woodworking.",
     scopeOfWork: "Complete civil construction, facade elevation, flooring, full-home interior joinery, and modular kitchen installation.",
@@ -2264,9 +2287,9 @@ const portfolioProjects = [
     tags: ["residential", "renovation", "interior-fitouts"],
     categoryLabel: "Residential Interiors & Renovation",
     client: "LS Project",
-    status: "COMPLETED PROJECT",
+    status: "ILLUSTRATIVE PROJECT ASSET",
     coverImage: siteAssets.kitchen01,
-    gallery: [siteAssets.kitchen01, siteAssets.residential02],
+    gallery: [siteAssets.kitchen01],
     excerpt: "Complete apartment transformation featuring a BWP-grade modular kitchen, wardrobes, and false ceilings.",
     description: "A residential interior and modular kitchen completed with coordinated remodeling and bespoke cabinetry.",
     scopeOfWork: "Layout reconfiguration, electrical and plumbing upgrades, parallel modular kitchen, bedroom wardrobes, and soft furnishings.",
@@ -2284,7 +2307,7 @@ function renderPortfolio(filter = "all") {
     : portfolioProjects.filter((p) => p.tags.includes(filter));
 
   grid.innerHTML = filtered.map((project) => `
-    <article class="project-card" data-category="${project.category}">
+    <article class="project-card" data-category="${project.category}" data-project-id="${project.id}">
       <div class="project-card-media image-frame aspect-card">
         <img src="${withAssetCache(project.coverImage)}" alt="${project.name}" loading="lazy" />
         <span class="project-status-badge">${project.status}</span>
@@ -2301,6 +2324,13 @@ function renderPortfolio(filter = "all") {
       </div>
     </article>
   `).join("");
+
+  grid.querySelectorAll(".project-card").forEach((card) => {
+    const project = portfolioProjects.find((item) => item.id === card.dataset.projectId);
+    if (project) {
+      attachAssetFallback(card.querySelector("img"), project.coverImage);
+    }
+  });
 
   // Bind modal triggers
   grid.querySelectorAll(".project-detail-trigger").forEach((btn) => {
@@ -2356,6 +2386,10 @@ function openProjectModal(projectId) {
 
   modal.hidden = false;
   document.body.style.overflow = "hidden";
+
+  body.querySelectorAll(".modal-gallery img").forEach((img, index) => {
+    attachAssetFallback(img, project.gallery[index] || project.coverImage);
+  });
 
   const cta = body.querySelector(".modal-inquire-cta");
   if (cta) {
