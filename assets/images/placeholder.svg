@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#E6E1D6"/>
+  <rect x="24" y="24" width="1152" height="752" fill="none" stroke="#A78B69" stroke-width="4"/>
+  <text x="600" y="390" fill="#777777" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Replace with verified LS image</text>
+  <text x="600" y="450" fill="#777777" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">assets/images placeholder</text>
+</svg>

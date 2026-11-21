@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LS Constructions &amp; Interiors | Construction &amp; Interior Solutions in Chennai</title>
+  <meta name="description" content="LS Constructions &amp; Interiors provides construction and interior solutions for commercial, industrial, and residential projects across Chennai, Tamil Nadu." />
+  <meta name="keywords" content="Construction Company in Chennai, Interior Solutions in Chennai, Commercial Interior Contractors, Office Interior Design Chennai, Residential Construction Chennai, Turnkey Interior Contractors, LS Constructions and Interiors" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://lsconstructioninteriors.com/" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LS Constructions &amp; Interiors" />
+  <meta property="og:title" content="LS Constructions &amp; Interiors | Construction &amp; Interior Solutions" />
+  <meta property="og:description" content="Construction and interior solutions for commercial, industrial, and residential projects in Chennai." />
+  <meta property="og:url" content="https://lsconstructioninteriors.com/" />
+  <meta property="og:image" content="assets/images/hero/hero-main-placeholder.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/branding/favicon-placeholder.svg" />
+
+  <!-- Embedded styles -->
+  <style>
+/* ==========================================================================
+   LS CONSTRUCTIONS & INTERIORS — MASTER STYLESHEET
+   Palette: Charcoal (#202020), Warm Ivory (#F3F0E9), Bronze (#A78B69),
+            Steel Grey (#777777), White (#FFFFFF)
+   Typography: Cormorant Garamond (Headings) & Manrope (Body/UI)
+   ========================================================================== */
+
+:root {
+  --color-charcoal: #202020;
+  --color-charcoal-soft: #2c2c2c;
+  --color-ivory: #F3F0E9;
+  --color-ivory-dark: #E6E1D6;
+  --color-bronze: #A78B69;
+  --color-bronze-dark: #8C7150;
+  --color-grey: #777777;
+  --color-grey-light: #B8B5AE;
+  --color-white: #FFFFFF;
+  --color-border: rgba(32, 32, 32, 0.12);
+  --color-border-light: rgba(255, 255, 255, 0.16);
+
+  --font-heading: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --container-max: 1320px;
+  --section-pad: 112px;
+  --transition: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-white);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition), opacity var(--transition);
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.section {
+  padding: var(--section-pad) 0;
+}
+
+.bg-ivory {
+  background-color: var(--color-ivory);
+}
+
+.bg-charcoal {
+  background-color: var(--color-charcoal);
+}
+
+.text-white { color: var(--color-white); }
+.text-bronze { color: var(--color-bronze); }
+.text-muted-light { color: rgba(255, 255, 255, 0.74); }
+
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  padding: 10px 18px;
+  z-index: 2000;
+}
+.skip-link:focus { top: 16px; }
+
+/* Typography */
+.section-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-bronze-dark);
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.15rem, 3.8vw, 3.35rem);
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.section-header-split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: end;
+  margin-bottom: 64px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.bg-charcoal .section-header-split {
+  border-bottom-color: var(--color-border-light);
+}
+
+.section-intro {
+  font-size: 1.02rem;
+  color: var(--color-grey);
+  max-width: 520px;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.55;
+  margin-bottom: 20px;
+}
+
+.body-text {
+  color: #4A4A4A;
+  margin-bottom: 24px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--color-bronze);
+  color: var(--color-white);
+  border-color: var(--color-bronze);
+}
+.btn-primary:hover {
+  background-color: var(--color-bronze-dark);
+  border-color: var(--color-bronze-dark);
+}
+
+.btn-outline-light {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+.btn-outline-light:hover {
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+  border-color: var(--color-white);
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+}
+.btn-outline-dark:hover {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.btn-full { width: 100%; }
+
+.text-link {
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  color: var(--color-charcoal);
+  border-bottom: 1px solid var(--color-bronze);
+  padding-bottom: 4px;
+}
+.text-link:hover { color: var(--color-bronze-dark); }
+
+/* Header & Navigation */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  transition: background-color var(--transition), padding var(--transition), box-shadow var(--transition);
+}
+
+.site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.97);
+  padding: 14px 0;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  max-width: 220px;
+  height: 46px;
+}
+
+.logo-img {
+  height: 46px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.logo-dark { display: none; }
+.site-header.scrolled .logo-light { display: none; }
+.site-header.scrolled .logo-dark { display: block; }
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.site-header.scrolled .nav-link {
+  color: var(--color-charcoal);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-bronze);
+}
+
+.nav-cta {
+  padding: 10px 20px;
+  border: 1px solid var(--color-bronze);
+  color: var(--color-white) !important;
+  background: var(--color-bronze);
+}
+.nav-cta:hover {
+  background: var(--color-bronze-dark);
+  border-color: var(--color-bronze-dark);
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hamburger-line {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: var(--color-white);
+  margin: 5px 0;
+  transition: transform 0.3s ease;
+}
+
+.site-header.scrolled .hamburger-line {
+  background-color: var(--color-charcoal);
+}
+
+/* 1. Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  padding: 140px 0 80px;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(20, 20, 20, 0.82) 0%, rgba(32, 32, 32, 0.58) 55%, rgba(32, 32, 32, 0.38) 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: var(--color-bronze);
+  margin-bottom: 24px;
+}
+
+.eyebrow-line {
+  width: 42px;
+  height: 1px;
+  background-color: var(--color-bronze);
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 6vw, 5.2rem);
+  font-weight: 600;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  max-width: 860px;
+  color: var(--color-ivory);
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  color: rgba(243, 240, 233, 0.9);
+  max-width: 640px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.28);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 72px;
+}
+
+.hero-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.pillar-item {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.pillar-num {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-bronze);
+}
+
+.pillar-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Image Frame & Aspect Ratios */
+.image-frame {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-ivory);
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.aspect-portrait { aspect-ratio: 4 / 5; }
+.aspect-landscape { aspect-ratio: 16 / 10; }
+.aspect-card { aspect-ratio: 4 / 3; }
+
+/* 2. About Section */
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.about-media {
+  position: relative;
+}
+
+.about-caption-card {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  padding: 28px 32px;
+  margin-top: -56px;
+  margin-left: 36px;
+  position: relative;
+  z-index: 2;
+  border-left: 3px solid var(--color-bronze);
+}
+
+.caption-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--color-bronze);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.caption-text {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.about-pillars-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 32px 0;
+  padding: 28px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  margin-bottom: 8px;
+}
+
+.about-card p {
+  font-size: 0.92rem;
+  color: #555555;
+}
+
+/* 3. Services Editorial Rows */
+.services-layout {
+  border-top: 1px solid var(--color-border);
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 200px 1fr auto;
+  gap: 40px;
+  align-items: start;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--color-border);
+  transition: background-color var(--transition);
+}
+
+.service-index {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--color-bronze-dark);
+  padding-top: 6px;
+}
+
+.service-main h3 {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-main p {
+  color: #4A4A4A;
+  max-width: 680px;
+  margin-bottom: 16px;
+}
+
+.service-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--color-charcoal);
+}
+
+.service-specs li::before {
+  content: "— ";
+  color: var(--color-bronze);
+  font-weight: 700;
+}
+
+/* 4. Project Portfolio */
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 48px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-charcoal);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: var(--color-charcoal);
+  border-color: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.project-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+.project-card:hover .image-frame img {
+  transform: scale(1.04);
+}
+
+.project-card-media {
+  position: relative;
+}
+
+.project-status-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background-color: rgba(32, 32, 32, 0.88);
+  color: var(--color-white);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.project-card-body {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-meta {
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-bronze-dark);
+  margin-bottom: 8px;
+}
+
+.project-title {
+  font-family: var(--font-heading);
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.project-excerpt {
+  font-size: 0.92rem;
+  color: #555555;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-location {
+  font-size: 0.82rem;
+  color: var(--color-grey);
+}
+
+.project-detail-trigger {
+  background: none;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  cursor: pointer;
+}
+.project-detail-trigger:hover {
+  color: var(--color-bronze-dark);
+}
+
+/* Before & After Slider */
+.transformation-showcase {
+  margin-top: 84px;
+  padding-top: 64px;
+  border-top: 1px solid var(--color-border);
+}
+
+.transformation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.transformation-header h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+}
+
+.transformation-header p {
+  color: var(--color-grey);
+  max-width: 440px;
+}
+
+.ba-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  max-height: 580px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  user-select: none;
+}
+
+.ba-image {
+  position: absolute;
+  inset: 0;
+}
+
+.ba-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ba-before {
+  clip-path: inset(0 0 0 0);
+}
+
+.ba-badge {
+  position: absolute;
+  bottom: 20px;
+  padding: 6px 14px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  background: rgba(32, 32, 32, 0.85);
+  color: var(--color-white);
+}
+.ba-badge-before { left: 20px; }
+.ba-badge-after { right: 20px; }
+
+.ba-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+  z-index: 5;
+}
+
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 2px;
+  background: var(--color-bronze);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.ba-arrows {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-charcoal);
+  border: 2px solid var(--color-bronze);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+/* 5. Process Timeline */
+.process-timeline {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.process-step {
+  min-width: 0;
+  min-height: 230px;
+  padding: 24px 16px;
+  border: 1px solid var(--color-border-light);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+
+.process-step:hover {
+  border-color: var(--color-bronze);
+  transform: translateY(-4px);
+}
+
+.step-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--color-bronze);
+  margin-bottom: 14px;
+}
+
+.process-step h3 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 1.1vw, 1.35rem);
+  line-height: 1.25;
+  color: var(--color-white);
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: clamp(0.72rem, 0.75vw, 0.86rem);
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+/* 6. Why Choose Us */
+.why-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.why-media {
+  margin-top: 32px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.why-item {
+  padding: 28px;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+}
+
+.why-num {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-bronze-dark);
+  margin-bottom: 10px;
+}
+
+.why-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.why-item p {
+  font-size: 0.92rem;
+  color: #555555;
+}
+
+
+/* 8. FAQ */
+.faq-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  cursor: pointer;
+}
+
+.faq-icon {
+  font-family: var(--font-body);
+  font-size: 1.4rem;
+  color: var(--color-bronze-dark);
+  transition: transform 0.25s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  display: none;
+  padding-bottom: 24px;
+  color: #4A4A4A;
+  font-size: 0.96rem;
+}
+
+/* 9. Contact Section */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 64px;
+}
+
+.contact-details-list {
+  display: grid;
+  gap: 22px;
+  margin: 32px 0;
+}
+
+.detail-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--color-bronze-dark);
+  margin-bottom: 4px;
+}
+
+.placeholder-note {
+  color: var(--color-grey);
+  font-size: 0.8rem;
+}
+
+.whatsapp-inline-link {
+  font-weight: 600;
+  color: #1F6E43;
+}
+
+.map-container {
+  width: 100%;
+  height: 240px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.contact-form-card {
+  background: var(--color-white);
+  padding: 48px;
+  border: 1px solid var(--color-border);
+}
+
+.contact-form-card h3 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.form-sub {
+  color: var(--color-grey);
+  font-size: 0.92rem;
+  margin-bottom: 28px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid rgba(32, 32, 32, 0.22);
+  background: var(--color-white);
+  color: var(--color-charcoal);
+  transition: border-color var(--transition);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-bronze);
+}
+
+.error-msg {
+  display: block;
+  color: #B42318;
+  font-size: 0.78rem;
+  margin-top: 5px;
+  min-height: 16px;
+}
+
+.form-submit-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.form-feedback {
+  margin-top: 18px;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.form-feedback.success {
+  padding: 14px 18px;
+  background: #ECFDF3;
+  color: #065F46;
+  border-left: 3px solid #059669;
+}
+
+.form-feedback.error {
+  padding: 14px 18px;
+  background: #FEF2F2;
+  color: #991B1B;
+  border-left: 3px solid #DC2626;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-charcoal);
+  color: var(--color-white);
+  padding: 80px 0 36px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 18px;
+}
+
+.footer-tagline {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  color: var(--color-bronze);
+  margin-bottom: 12px;
+}
+
+.footer-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 340px;
+}
+
+.footer-links h4 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-bronze);
+  margin-bottom: 18px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer-links a:hover { color: var(--color-white); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 28px;
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Project Detail Modal */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.project-modal[hidden] {
+  display: none;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 15, 15, 0.82);
+}
+
+.modal-dialog {
+  position: relative;
+  z-index: 2;
+  background: var(--color-white);
+  max-width: 960px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 44px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--color-charcoal);
+}
+
+.modal-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.modal-gallery img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.modal-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: var(--color-ivory);
+  margin-bottom: 24px;
+}
+
+.modal-spec-item strong {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-bronze-dark);
+}
+
+/* Floating Actions */
+.floating-actions {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.float-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.float-btn:hover { transform: translateY(-3px); }
+
+.float-btn svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.float-whatsapp {
+  background: #25D366;
+  color: var(--color-white);
+}
+
+.float-top {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  border: 1px solid var(--color-bronze);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.float-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Subtle Scroll Reveal */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ==========================================================================
+   LS CONSTRUCTIONS & INTERIORS — RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+@media (max-width: 1180px) {
+  :root {
+    --section-pad: 88px;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 960px) {
+  .nav-toggle {
+    display: block;
+    z-index: 1002;
+  }
+
+  .primary-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(340px, 85vw);
+    height: 100vh;
+    background-color: var(--color-charcoal);
+    padding: 104px 32px 40px;
+    transition: right 0.35s ease;
+    z-index: 1001;
+  }
+
+  .primary-nav.open {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+  }
+
+  .site-header.scrolled .nav-link {
+    color: var(--color-white);
+  }
+
+  .section-header-split,
+  .about-grid,
+  .why-layout,
+  .faq-layout,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --section-pad: 68px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .process-step,
+  .process-step:nth-child(n) {
+    min-height: 0;
+    margin-top: 0;
+  }
+
+  .hero-pillars,
+  .about-pillars-grid,
+  .portfolio-grid,
+  .process-timeline,
+  .why-grid,
+  .form-row,
+  .form-submit-row,
+  .modal-gallery,
+  .modal-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-caption-card {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .contact-form-card {
+    padding: 28px 20px;
+  }
+
+  .transformation-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ba-slider {
+    aspect-ratio: 4 / 3;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .modal-dialog {
+    padding: 28px 20px;
+  }
+}
+
+  </style>
+
+  <!-- LocalBusiness Structured Data (Verified Fields Only) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GeneralContractor",
+    "name": "LS Constructions & Interiors",
+    "url": "https://lsconstructioninteriors.com/",
+    "logo": "https://lsconstructioninteriors.com/assets/images/branding/logo-placeholder.svg",
+    "description": "Construction and turnkey interior solutions partner for commercial offices, industrial facilities, and residential spaces in Chennai, Tamil Nadu.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No. 271, 3rd Street, Venkatesan Nagar, Drivers Colony, Pattabiram",
+      "addressLocality": "Chennai",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600072",
+      "addressCountry": "IN"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Chennai"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/company/ls-constructions-and-interiors/home/",
+      "https://www.instagram.com/lsconstructionsandinteriors"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="LS Constructions &amp; Interiors Home">
+        <img data-asset="logoLight" src="assets/images/branding/logo-placeholder.svg" alt="LS Constructions &amp; Interiors Logo" class="logo-img" width="220" height="54" />
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#why-us" class="nav-link">Why LS</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Start a Project</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- 1. HERO SECTION -->
+    <section class="hero-section" id="home" aria-label="Introduction">
+      <div class="hero-media">
+        <img data-asset="heroMain" src="assets/images/hero/hero-main-placeholder.png" alt="LS Constructions &amp; Interiors Construction &amp; Interior Solutions in Chennai" class="hero-bg-img" />
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-eyebrow reveal-up">
+          <span class="eyebrow-line"></span>
+          <span>CHENNAI &bull; TAMIL NADU &bull; TURNKEY CONSTRUCTION &amp; INTERIOR SOLUTIONS</span>
+        </div>
+        <h1 class="hero-title reveal-up">Building Excellence.<br />Designing Experiences.</h1>
+        <p class="hero-subtitle reveal-up">
+          From thoughtfully designed interiors to complete construction solutions, we bring your vision to life through functional, inspiring, and well-crafted spaces.
+        </p>
+        <div class="hero-actions reveal-up">
+          <a href="#portfolio" class="btn btn-primary">Explore Our Projects</a>
+          <a href="#contact" class="btn btn-outline-light">Discuss Your Project</a>
+        </div>
+
+        <div class="hero-pillars reveal-up">
+          <div class="pillar-item">
+            <span class="pillar-num">01</span>
+            <span class="pillar-label">Commercial &amp; Corporate Fit-Outs</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">02</span>
+            <span class="pillar-label">Industrial &amp; Warehouse Infrastructure</span>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">03</span>
+            <span class="pillar-label">Turnkey Residential Construction &amp; Interiors</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. ABOUT US SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-media reveal-up">
+            <div class="image-frame aspect-portrait">
+              <img data-asset="aboutCompany" src="assets/images/about/company-placeholder.svg" alt="LS Constructions &amp; Interiors Construction and Interior Execution" loading="lazy" />
+            </div>
+            <div class="about-caption-card">
+              <p class="caption-eyebrow">INTEGRATED DELIVERY MODEL</p>
+              <p class="caption-text">Single-point responsibility across civil engineering, MEP coordination, bespoke joinery, and interior fit-outs.</p>
+            </div>
+          </div>
+
+          <div class="about-body reveal-up">
+            <span class="section-tag">ABOUT LS CONSTRUCTIONS &amp; INTERIORS</span>
+            <h2 class="section-title">Precision Engineering Meets Thoughtful Design.</h2>
+            <p class="lead-text">
+              Based in Chennai, LS Constructions &amp; Interiors is a multidisciplinary construction and interior solutions partner dedicated to delivering functional, inspiring, and future-ready built environments.
+            </p>
+            <p class="body-text">
+              We bring construction and interior execution together through an integrated approach. From planning and civil works to MEP coordination, interior fit-outs, and final handover, we aim to deliver cohesive spaces that balance functionality, quality, and design.
+            </p>
+
+            <div class="about-pillars-grid">
+              <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>To deliver structurally sound and thoughtfully designed spaces through transparent budgeting, efficient project management, and disciplined site supervision.</p>
+              </div>
+              <div class="about-card">
+                <h3>Our Approach</h3>
+                <p>We carefully consider every material, service requirement, and spatial layout to create environments that support long-term durability, functionality, and everyday comfort.</p>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="#process" class="text-link">Explore Our 7-Stage Execution Process &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. OUR SERVICES SECTION -->
+    <section class="section services-section bg-ivory" id="services">
+      <div class="container">
+        <div class="section-header-split reveal-up">
+          <div>
+            <span class="section-tag">CAPABILITIES &amp; SECTORS</span>
+            <h2 class="section-title">End-to-End Construction &amp; Interior Solutions</h2>
+          </div>
+          <p class="section-intro">
+            Supporting commercial, industrial, and residential requirements through coordinated construction and interior services.
+          </p>
+        </div>
+
+        <div class="services-layout">
+          <div class="service-row reveal-up" id="service-commercial">
+            <div class="service-index">01 / CORE SECTOR</div>
+            <div class="service-main">
+              <h3>Commercial &amp; Corporate Office Interiors</h3>
+              <p>High-performance workplaces, executive suites, boardrooms, co-working environments, and retail spaces tailored for brand identity, acoustic clarity, and ergonomic productivity.</p>
+              <ul class="service-specs">
+                <li>Space planning &amp; workstation ergonomics</li>
+                <li>HVAC, electrical, data &amp; fire-safety integration</li>
+                <li>Acoustic partitions, false ceilings &amp; custom millwork</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Commercial &amp; Corporate Interiors">Discuss Commercial Project</button>
+            </div>
+          </div>
+
+          <div class="service-row reveal-up" id="service-industrial">
+            <div class="service-index">02 / CORE SECTOR</div>
+            <div class="service-main">
+              <h3>Industrial Solutions, Factories &amp; Warehouses</h3>
+              <p>Civil construction and interior solutions for factory spaces, industrial administrative areas, and warehouses, planned around the functional needs of each project.</p>
+              <ul class="service-specs">
+                <li>Civil works and facility planning</li>
+                <li>Storage and utility layout coordination</li>
+                <li>Administrative and support area fit-outs</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Industrial &amp; Warehouse Solutions">Discuss Industrial Project</button>
+            </div>
+          </div>
+
+          <div class="service-row reveal-up" id="service-turnkey">
+            <div class="service-index">03 / TURNKEY DELIVERY</div>
+            <div class="service-main">
+              <h3>Turnkey Interior Fit-Out Solutions</h3>
+              <p>Complete design-build execution where LS Constructions &amp; Interiors assumes full responsibility for design engineering, procurement, vendor coordination, quality control, and handover.</p>
+              <ul class="service-specs">
+                <li>Single-point project coordination with clearly defined milestones</li>
+                <li>Direct material sourcing &amp; factory-finished joinery</li>
+                <li>Coordinated planning and execution</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Turnkey Interior Solutions">Discuss Turnkey Project</button>
+            </div>
+          </div>
+
+          <div class="service-row reveal-up" id="service-construction">
+            <div class="service-index">04 / CIVIL CONSTRUCTION</div>
+            <div class="service-main">
+              <h3>Residential &amp; Commercial Civil Construction</h3>
+              <p>Construction for independent villas, boutique apartments, and commercial buildings, with planning and structural supervision arranged according to project requirements.</p>
+              <ul class="service-specs">
+                <li>RCC framed structures &amp; masonry execution</li>
+                <li>Waterproofing, plumbing &amp; electrical rough-ins</li>
+                <li>Facade and exterior development</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Civil Construction">Discuss Construction Project</button>
+            </div>
+          </div>
+
+          <div class="service-row reveal-up" id="service-residential">
+            <div class="service-index">05 / RESIDENTIAL INTERIORS</div>
+            <div class="service-main">
+              <h3>Residential Interiors &amp; Full-Home Interior Design</h3>
+              <p>Refined living spaces, master suites, bespoke wardrobes, lighting design, and curated material palettes crafted around your family&rsquo;s lifestyle and spatial flow.</p>
+              <ul class="service-specs">
+                <li>3D visualization &amp; custom furniture detailing</li>
+                <li>Vastu-aligned spatial layouts &amp; natural lighting</li>
+                <li>Premium veneers, laminates, stone &amp; soft furnishings</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Residential Interiors">Discuss Residential Project</button>
+            </div>
+          </div>
+
+          <div class="service-row reveal-up" id="service-kitchens">
+            <div class="service-index">06 / MODULAR KITCHENS</div>
+            <div class="service-main">
+              <h3>Modular Kitchens &amp; Custom Cabinetry</h3>
+              <p>Ergonomic parallel, L-shaped, U-shaped, and island modular kitchens engineered with moisture-resistant substrates, precision hardware, and durable countertops.</p>
+              <ul class="service-specs">
+                <li>BWP-grade plywood &amp; HDHMR cabinetry</li>
+                <li>Soft-close tandem drawers &amp; tall pantry units</li>
+                <li>Quartz/granite counters &amp; integrated appliance bays</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Modular Kitchens">Discuss Kitchen Project</button>
+            </div>
+          </div>
+
+          <div class="service-row reveal-up" id="service-renovation">
+            <div class="service-index">07 / RENOVATION</div>
+            <div class="service-main">
+              <h3>Structural and Interior Renovation</h3>
+              <p>Modernizing aging residences, offices, and commercial properties with structural retrofitting, layout reconfiguration, MEP upgrades, and contemporary finishes.</p>
+              <ul class="service-specs">
+                <li>Phased execution to minimize operational downtime</li>
+                <li>Flooring, ceiling, electrical &amp; plumbing overhauls</li>
+                <li>Adaptive reuse &amp; workspace expansion</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <button type="button" class="btn btn-outline-dark inquire-service-btn" data-service="Renovation &amp; Remodeling">Discuss Renovation Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECT PORTFOLIO SECTION -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-header-split reveal-up">
+          <div>
+            <span class="section-tag">SELECTED WORKS &amp; PORTFOLIO</span>
+            <h2 class="section-title">Selected Projects</h2>
+          </div>
+          <p class="section-intro">
+            Explore completed LS projects across commercial, residential, and interior fit-out categories.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="portfolio-filters reveal-up" role="tablist" aria-label="Project Category Filters">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">ALL PROJECTS</button>
+          <button type="button" class="filter-btn" data-filter="commercial" role="tab" aria-selected="false">COMMERCIAL</button>
+          <button type="button" class="filter-btn" data-filter="corporate-offices" role="tab" aria-selected="false">CORPORATE OFFICES</button>
+          <button type="button" class="filter-btn" data-filter="interior-fitouts" role="tab" aria-selected="false">INTERIOR FIT-OUTS</button>
+          <button type="button" class="filter-btn" data-filter="residential" role="tab" aria-selected="false">RESIDENTIAL</button>
+          <button type="button" class="filter-btn" data-filter="renovation" role="tab" aria-selected="false">RENOVATION</button>
+        </div>
+
+        <!-- Editorial Portfolio Grid -->
+        <div class="portfolio-grid" id="portfolio-grid" aria-live="polite"></div>
+
+        <!-- Interactive Before & After Transformation Comparison -->
+        <div class="transformation-showcase reveal-up">
+          <div class="transformation-header">
+            <div>
+              <span class="section-tag">SITE TRANSFORMATION</span>
+              <h3>Before &amp; After Execution Comparison</h3>
+            </div>
+            <p>Drag the divider to compare bare-shell site conditions against completed turnkey interior execution.</p>
+          </div>
+
+          <div class="ba-slider" id="ba-slider" aria-label="Before and after renovation comparison slider">
+            <div class="ba-image ba-after">
+              <img data-asset="projectAfter" src="assets/images/projects/after-placeholder.svg" alt="Completed Turnkey Interior Space" loading="lazy" />
+              <span class="ba-badge ba-badge-after">AFTER COMPLETION</span>
+            </div>
+            <div class="ba-image ba-before" id="ba-before-layer">
+              <img data-asset="projectBefore" src="assets/images/projects/before-placeholder.svg" alt="Bare Shell Site Before Fit-Out" loading="lazy" />
+              <span class="ba-badge ba-badge-before">BEFORE / SHELL STATE</span>
+            </div>
+            <input type="range" min="0" max="100" value="100" class="ba-range" id="ba-range" aria-label="Comparison slider percentage" />
+            <div class="ba-handle" id="ba-handle" aria-hidden="true">
+              <span class="ba-arrows">&lsaquo; &rsaquo;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. OUR PROCESS SECTION -->
+    <section class="section process-section bg-charcoal text-light" id="process">
+      <div class="container">
+        <div class="section-header-split reveal-up">
+          <div>
+            <span class="section-tag text-bronze">EXECUTION METHODOLOGY</span>
+            <h2 class="section-title text-white">Seven-Stage Turnkey Delivery Process</h2>
+          </div>
+          <p class="section-intro text-muted-light">
+            A structured, transparent workflow designed to eliminate guesswork, control budgets, and ensure timely handover across every project scale.
+          </p>
+        </div>
+
+        <div class="process-timeline reveal-up">
+          <article class="process-step">
+            <span class="step-number">01</span>
+            <h3>Requirement Study</h3>
+            <p>We understand the site, project purpose, functional requirements, preferred style, timeline, and investment range.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">02</span>
+            <h3>Site Assessment</h3>
+            <p>We verify dimensions, existing conditions, access, structural feasibility, and available utilities before planning begins.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">03</span>
+            <h3>Concept &amp; Planning</h3>
+            <p>Layouts, design intent, 2D plans, 3D views, and coordinated drawings are developed around the approved direction.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">04</span>
+            <h3>BOQ, Costing &amp; Approval</h3>
+            <p>A clear scope, Bill of Quantities (BOQ), itemized costing, material selections, payment milestones, and project schedule are finalized.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">05</span>
+            <h3>Execution</h3>
+            <p>Approved plans are executed through coordinated civil, MEP, joinery, and finishing work under site supervision.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">06</span>
+            <h3>Quality Inspection</h3>
+            <p>Work is inspected at defined stages for specification, alignment, service performance, safety, and finish quality.</p>
+          </article>
+
+          <article class="process-step">
+            <span class="step-number">07</span>
+            <h3>Handover</h3>
+            <p>Snag points are closed, final cleaning is completed, and the finished project is handed over after client review.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHY CHOOSE US SECTION -->
+    <section class="section why-section" id="why-us">
+      <div class="container">
+        <div class="why-layout">
+          <div class="why-intro reveal-up">
+            <span class="section-tag">WHY LS CONSTRUCTIONS &amp; INTERIORS</span>
+            <h2 class="section-title">Built on Accountability, Precision &amp; Craft.</h2>
+            <p class="body-text">
+              Construction and interior projects require close coordination between design, civil works, and finishing teams. At LS Constructions &amp; Interiors, we aim to bring these elements together through integrated planning and coordinated execution.
+            </p>
+            <div class="why-media">
+              <div class="image-frame aspect-landscape">
+                <img data-asset="aboutTeam" src="assets/images/about/team-placeholder.svg" alt="LS Constructions &amp; Interiors Engineering and Design Team" loading="lazy" />
+              </div>
+            </div>
+          </div>
+
+          <div class="why-grid reveal-up">
+            <div class="why-item">
+              <span class="why-num">01</span>
+              <h3>Single-Point Project Coordination</h3>
+              <p>Planning and execution are coordinated across construction and interior requirements to support clearer communication.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">02</span>
+              <h3>Commercial &amp; Industrial Solutions</h3>
+              <p>Solutions for corporate workspaces, industrial facilities, and warehouse environments, tailored to project requirements.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">03</span>
+              <h3>Clear Scope &amp; Cost Planning</h3>
+              <p>Project scope, material choices, and itemized costing are discussed with the client before work begins.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">04</span>
+              <h3>Milestone-Based Planning</h3>
+              <p>Project activities can be organized into stages for clearer sequencing and progress review.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">05</span>
+              <h3>Material &amp; Finish Coordination</h3>
+              <p>Suitable materials and finishes are selected and coordinated according to the project requirements and approved specifications.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">06</span>
+              <h3>Client Communication</h3>
+              <p>Key decisions and project updates are discussed during planning, execution, and handover.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ SECTION -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="faq-layout">
+          <div class="faq-header reveal-up">
+            <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+            <h2 class="section-title">Project Planning &amp; Execution Clarity</h2>
+            <p class="body-text">
+              Answers to common questions about our turnkey workflow, project categories, and service coverage across Chennai and Tamil Nadu.
+            </p>
+            <a href="#contact" class="btn btn-outline-dark">Ask a Specific Question</a>
+          </div>
+
+          <div class="faq-accordion reveal-up" id="faq-accordion">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="true">
+                <span>What types of projects does LS Constructions &amp; Interiors undertake?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer" style="display: block;">
+                <p>We execute commercial office interiors, corporate fit-outs, co-working spaces, industrial and warehouse construction, residential building construction, full-home interiors, modular kitchens, and structural/interior renovations.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Do you provide complete turnkey execution from design to handover?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Turnkey support can cover consultation, site measurement, planning, construction and interior execution, and handover. The exact scope and coordination involved can be confirmed based on the project requirements.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Can you work with our existing architect or project management consultant (PMC)?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>We can coordinate with an existing architect or project consultant when required, subject to the project scope and the responsibilities agreed with all parties.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Which locations do you serve?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>LS serves Chennai and surrounding locations in Tamil Nadu. Project locations and scope can be discussed during consultation, subject to availability and site requirements.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>How do we initiate a project estimate or site visit?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Complete the project inquiry form below or contact us through WhatsApp. Share the property type, location, and approximate scope, and the team will coordinate a discussion and, if suitable, a site visit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CONTACT US SECTION -->
+    <section class="section contact-section bg-ivory" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal-up">
+            <span class="section-tag">START A CONVERSATION</span>
+            <h2 class="section-title">Discuss Your Upcoming Project</h2>
+            <p class="body-text">
+              Share your requirements, and our team will get in touch to discuss the project and coordinate a consultation or site visit.
+            </p>
+
+            <div class="contact-details-list">
+              <div class="contact-detail">
+                <span class="detail-label">OFFICE LOCATION</span>
+                <p>No. 271, 3rd Street, Venkatesan Nagar,<br />Drivers Colony, Pattabiram, Chennai - 600 072</p>
+              </div>
+
+              <div class="contact-detail">
+                <span class="detail-label">DIRECT TELEPHONE</span>
+                <p><a href="tel:+919940453243" id="contact-phone-link">+91 9940453243</a></p>
+              </div>
+
+              <div class="contact-detail">
+                <span class="detail-label">OFFICIAL EMAIL</span>
+                <p><a href="mailto:info@lsconstructioninteriors.com" id="contact-email-link">info@lsconstructioninteriors.com</a></p>
+              </div>
+
+              <div class="contact-detail">
+                <span class="detail-label">INSTANT MESSAGING</span>
+                <p><a href="#" id="whatsapp-direct-link" class="whatsapp-inline-link" target="_blank" rel="noopener noreferrer">Chat with Our Team on WhatsApp &rarr;</a></p>
+              </div>
+            </div>
+
+            <div class="map-container">
+              <iframe
+                title="LS Constructions &amp; Interiors Location Map - Chennai, Tamil Nadu"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.590662282236!2d80.07885860998135!3d13.125098111442238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6737cc13ea90cbcd%3A0xf87479acb2dcedfe!2sLS%20CONSTRUCTIONS%20AND%20INTERIORS!5e0!3m2!1sen!2sin!4v1795255351985!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+              </iframe>
+            </div>
+          </div>
+
+          <div class="contact-form-card reveal-up">
+            <h3>Project Inquiry &amp; Site Visit Request</h3>
+            <p class="form-sub">Provide your project parameters for an informed preliminary discussion.</p>
+
+            <form id="project-inquiry-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="client-name">Full Name *</label>
+                  <input type="text" id="client-name" name="name" placeholder="Your name or company representative" required />
+                  <span class="error-msg" id="error-name"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="client-phone">Phone / WhatsApp Number *</label>
+                  <input type="tel" id="client-phone" name="phone" placeholder="+91 98XXX XXXXX" required />
+                  <span class="error-msg" id="error-phone"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="client-email">Email Address *</label>
+                  <input type="email" id="client-email" name="email" placeholder="name@company.com" required />
+                  <span class="error-msg" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="project-location">Project Location *</label>
+                  <input type="text" id="project-location" name="location" placeholder="e.g., OMR, Guindy, Ambattur, Anna Nagar" required />
+                  <span class="error-msg" id="error-location"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="project-category">Project Category *</label>
+                  <select id="project-category" name="category" required>
+                    <option value="">Select project type</option>
+                    <option value="Commercial & Corporate Interiors">Commercial &amp; Corporate Interiors</option>
+                    <option value="Industrial & Warehouse Solutions">Industrial &amp; Warehouse Solutions</option>
+                    <option value="Turnkey Interior Solutions">Turnkey Interior Solutions</option>
+                    <option value="Civil Construction">Residential / Commercial Construction</option>
+                    <option value="Residential Interiors">Residential Interiors</option>
+                    <option value="Modular Kitchens">Modular Kitchens</option>
+                    <option value="Renovation & Remodeling">Renovation &amp; Remodeling</option>
+                  </select>
+                  <span class="error-msg" id="error-category"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="project-budget">Estimated Budget Range</label>
+                  <select id="project-budget" name="budget">
+                    <option value="To be discussed">To be discussed</option>
+                    <option value="Under ₹15 Lakhs">Under ₹15 Lakhs</option>
+                    <option value="₹15 Lakhs – ₹50 Lakhs">₹15 Lakhs &ndash; ₹50 Lakhs</option>
+                    <option value="₹50 Lakhs – ₹1.5 Crore">₹50 Lakhs &ndash; ₹1.5 Crore</option>
+                    <option value="Above ₹1.5 Crore">Above ₹1.5 Crore</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="project-details">Project Scope &amp; Approximate Area (Sq. Ft.) *</label>
+                <textarea id="project-details" name="details" rows="4" placeholder="Describe your site status, approximate square footage, target timeline, or specific requirements..." required></textarea>
+                <span class="error-msg" id="error-details"></span>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-primary btn-full">Submit Project Inquiry</button>
+                <button type="button" id="form-whatsapp-btn" class="btn btn-outline-dark btn-full">Send Inquiry via WhatsApp</button>
+              </div>
+
+              <div class="form-feedback" id="form-feedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img data-asset="logoLight" src="assets/images/branding/logo-placeholder.svg" alt="LS Constructions &amp; Interiors" class="footer-logo" width="220" height="54" />
+          <p class="footer-tagline">Building Excellence. Designing Experiences.</p>
+          <p class="footer-desc">
+            Construction &amp; Interior Solutions Partner serving commercial, industrial, and residential project requirements across Chennai, Tamil Nadu.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about">About Company</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#portfolio">Project Portfolio</a></li>
+            <li><a href="#process">Execution Process</a></li>
+            <li><a href="#why-us">Why Choose LS</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Core Sectors</h4>
+          <ul>
+            <li><a href="#service-commercial">Corporate Office Interiors</a></li>
+            <li><a href="#service-industrial">Industrial &amp; Warehouses</a></li>
+            <li><a href="#service-turnkey">Turnkey Fit-Out Solutions</a></li>
+            <li><a href="#service-construction">Civil Construction</a></li>
+            <li><a href="#service-residential">Residential Interiors</a></li>
+            <li><a href="#service-kitchens">Modular Kitchens</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/company/ls-constructions-and-interiors/home/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/lsconstructionsandinteriors" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> LS Constructions &amp; Interiors, Chennai. All rights reserved.</p>
+        <p class="footer-note">Construction &amp; Interior Solutions Partner.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Case Study Modal -->
+  <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Close project details">&times;</button>
+      <div class="modal-body" id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Actions (WhatsApp + Back to Top) -->
+  <div class="floating-actions">
+    <a href="#" id="floating-whatsapp" class="float-btn float-whatsapp" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.81 3.03 15.97c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.75a13.02 13.02 0 0 0 6.36 1.64h.01c7.18 0 13.02-5.82 13.02-12.98C29.07 8.75 23.22 3 16.04 3Zm0 23.74h-.01a10.8 10.8 0 0 1-5.5-1.51l-.39-.23-3.97 1.04 1.06-3.87-.25-.4a10.74 10.74 0 0 1-1.65-5.77c0-5.94 4.85-10.77 10.71-10.77 2.86 0 5.54 1.11 7.57 3.13a10.62 10.62 0 0 1 3.13 7.56c0 5.94-4.84 10.82-10.7 10.82Zm5.87-8.1c-.32-.16-1.9-.93-2.19-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.58-1.59a9.64 9.64 0 0 1-1.78-2.21c-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.72-.98-2.36-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.11 1.09-1.11 2.65 0 1.56 1.14 3.07 1.3 3.28.16.21 2.25 3.43 5.44 4.81.76.33 1.35.52 1.81.67.76.24 1.45.21 2 .13.61-.09 1.9-.77 2.17-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37Z"/>
+      </svg>
+    </a>
+    <button type="button" id="back-to-top" class="float-btn float-top" aria-label="Back to top" title="Back to Top">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M5 15l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Modular Vanilla JavaScript -->
+  <script>
+/* ==========================================================================
+   LS CONSTRUCTIONS & INTERIORS — CENTRAL ASSET MANIFEST & CORE CONFIG
+   Replace placeholder paths below with verified company photographs and logos.
+   ========================================================================== */
+
+const siteConfig = {
+  companyName: "LS Constructions & Interiors",
+  location: "No. 271, 3rd Street, Venkatesan Nagar, Drivers Colony, Pattabiram, Chennai - 600 072",
+  // Replace with verified phone/WhatsApp number in international format (no + or spaces)
+  whatsappNumber: "919940453243",
+  displayPhone: "+91 9940453243",
+  email: "info@lsconstructioninteriors.com",
+  social: {
+    linkedin: "https://www.linkedin.com/company/ls-constructions-and-interiors/home/",
+    instagram: "https://www.instagram.com/lsconstructionsandinteriors",
+    website: "https://lsconstructioninteriors.com/"
+  }
+};
+
+const siteAssets = {
+  // 1. Branding
+  logoLight: "assets/images/branding/logo-placeholder.svg",
+  favicon: "assets/images/branding/favicon-placeholder.svg",
+
+  // 2. Hero & About
+  heroMain: "assets/images/hero/hero-main-placeholder.png",
+  aboutCompany: "assets/images/about/company-placeholder.svg",
+  aboutTeam: "assets/images/about/team-placeholder.svg",
+  aboutFounder: "assets/images/about/founder-placeholder.svg",
+
+  // 3. Sector & Project Placeholders
+  residential01: "assets/images/residential/project-01-placeholder.svg",
+  residential02: "assets/images/residential/project-02-placeholder.svg",
+  commercial01: "assets/images/commercial/office-01-placeholder.svg",
+  commercial02: "assets/images/commercial/office-02-placeholder.svg",
+  kitchen01: "assets/images/kitchens/kitchen-01-placeholder.svg",
+
+  // 4. Before & After Comparison
+  projectBefore: "assets/images/projects/before-placeholder.svg",
+  projectAfter: "assets/images/projects/after-placeholder.svg",
+
+};
+
+const assetCacheKey = Date.now();
+
+function withAssetCache(path) {
+  return `${path}?v=${assetCacheKey}`;
+}
+
+/**
+ * Hydrates all [data-asset] images with paths from siteAssets
+ * and attaches graceful fallback handling to prevent broken image icons.
+ */
+function hydrateSiteAssets() {
+  const assetElements = document.querySelectorAll("[data-asset]");
+  assetElements.forEach((el) => {
+    const key = el.getAttribute("data-asset");
+    if (siteAssets[key]) {
+      el.src = withAssetCache(siteAssets[key]);
+    }
+    el.addEventListener("error", function handleImgError() {
+      this.removeEventListener("error", handleImgError);
+      this.src = withAssetCache("assets/images/hero/hero-main-placeholder.png");
+    });
+  });
+
+  // Update footer year
+  const yearEl = document.getElementById("current-year");
+  if (yearEl) {
+    yearEl.textContent = new Date().getFullYear();
+  }
+
+  // Hydrate WhatsApp & Phone links
+  const defaultWaMsg = encodeURIComponent(
+    "Hello LS Constructions & Interiors, I would like to discuss a construction / interior project in Chennai."
+  );
+  const waUrl = `https://wa.me/${siteConfig.whatsappNumber}?text=${defaultWaMsg}`;
+
+  const directWa = document.getElementById("whatsapp-direct-link");
+  const floatWa = document.getElementById("floating-whatsapp");
+  const phoneLink = document.getElementById("contact-phone-link");
+  const emailLink = document.getElementById("contact-email-link");
+
+  if (directWa) directWa.href = waUrl;
+  if (floatWa) floatWa.href = waUrl;
+  if (phoneLink) {
+    phoneLink.textContent = siteConfig.displayPhone;
+    phoneLink.href = `tel:+${siteConfig.whatsappNumber}`;
+  }
+  if (emailLink) {
+    emailLink.textContent = siteConfig.email;
+    emailLink.href = `mailto:${siteConfig.email}`;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", hydrateSiteAssets);
+
+
+/* ==========================================================================
+   LS CONSTRUCTIONS & INTERIORS — EDITABLE PROJECT PORTFOLIO & CASE MODALS
+   ========================================================================== */
+
+const portfolioProjects = [
+  {
+    id: "ls-project-01",
+    name: "Corporate Office Fit-Out",
+    category: "corporate-offices",
+    tags: ["commercial", "corporate-offices", "interior-fitouts"],
+    categoryLabel: "Corporate Office & Turnkey Fit-Out",
+    client: "LS Project",
+    status: "COMPLETED PROJECT",
+    coverImage: siteAssets.commercial01,
+    gallery: [siteAssets.commercial01, siteAssets.commercial02],
+    excerpt: "Open-plan agile workspace, executive cabins, acoustic meeting pods, and integrated MEP services.",
+    description: "A multi-zone corporate workspace featuring ergonomic workstation clusters, glazed boardrooms, acoustic baffling, and energy-efficient lighting.",
+    scopeOfWork: "Space planning, drywall partitions, modular workstations, HVAC ducting, structured cabling, and custom reception joinery.",
+    designApproach: "Warm architectural minimalism balancing natural wood veneers, matte charcoal framing, and acoustic comfort for high-density teams.",
+    executionDetails: "Coordinated planning across civil, interior, and building-service requirements."
+  },
+  {
+    id: "ls-project-02",
+    name: "Commercial Co-Working Workspace",
+    category: "commercial",
+    tags: ["commercial", "corporate-offices", "interior-fitouts"],
+    categoryLabel: "Commercial Interiors",
+    client: "LS Project",
+    status: "COMPLETED PROJECT",
+    coverImage: siteAssets.commercial02,
+    gallery: [siteAssets.commercial02, siteAssets.commercial01],
+    excerpt: "Flexible collaborative lounges, private team suites, cafeteria, and acoustic conference rooms.",
+    description: "A commercial workspace emphasizing durability, modular adaptability, and hospitality-grade common areas.",
+    scopeOfWork: "Turnkey interior fit-out, custom banquette seating, acoustic ceilings, pantry build-out, and lighting automation.",
+    designApproach: "Tactile bronze accents, warm ivory wall treatments, and exposed architectural ceiling grids.",
+    executionDetails: "Coordinated interior work and modular components."
+  },
+  {
+    id: "ls-project-03",
+    name: "Contemporary Residential Construction",
+    category: "residential",
+    tags: ["residential"],
+    categoryLabel: "Residential Construction & Interiors",
+    client: "LS Project",
+    status: "COMPLETED PROJECT",
+    coverImage: siteAssets.residential01,
+    gallery: [siteAssets.residential01, siteAssets.residential02, siteAssets.kitchen01],
+    excerpt: "Ground-up residential construction with custom living spaces, bedrooms, and modular kitchen.",
+    description: "An end-to-end residential project delivered from the structural frame through bespoke interior woodworking.",
+    scopeOfWork: "Complete civil construction, facade elevation, flooring, full-home interior joinery, and modular kitchen installation.",
+    designApproach: "Cross-ventilated Vastu-aligned planning with natural stone, warm timber tones, and understated architectural lighting.",
+    executionDetails: "Construction and interior coordination."
+  },
+  {
+    id: "ls-project-04",
+    name: "Full-Home Interior & Modular Kitchen",
+    category: "renovation",
+    tags: ["residential", "renovation", "interior-fitouts"],
+    categoryLabel: "Residential Interiors & Renovation",
+    client: "LS Project",
+    status: "COMPLETED PROJECT",
+    coverImage: siteAssets.kitchen01,
+    gallery: [siteAssets.kitchen01, siteAssets.residential02],
+    excerpt: "Complete apartment transformation featuring a BWP-grade modular kitchen, wardrobes, and false ceilings.",
+    description: "A residential interior and modular kitchen completed with coordinated remodeling and bespoke cabinetry.",
+    scopeOfWork: "Layout reconfiguration, electrical and plumbing upgrades, parallel modular kitchen, bedroom wardrobes, and soft furnishings.",
+    designApproach: "Clutter-free storage architecture paired with durable quartz surfaces and warm neutral palettes.",
+    executionDetails: "Kitchen planning and coordinated interior installation."
+  }
+];
+
+function renderPortfolio(filter = "all") {
+  const grid = document.getElementById("portfolio-grid");
+  if (!grid) return;
+
+  const filtered = filter === "all"
+    ? portfolioProjects
+    : portfolioProjects.filter((p) => p.tags.includes(filter));
+
+  grid.innerHTML = filtered.map((project) => `
+    <article class="project-card" data-category="${project.category}">
+      <div class="project-card-media image-frame aspect-card">
+        <img src="${withAssetCache(project.coverImage)}" alt="${project.name}" loading="lazy" />
+        <span class="project-status-badge">${project.status}</span>
+      </div>
+      <div class="project-card-body">
+        <span class="project-meta">${project.categoryLabel}</span>
+        <h3 class="project-title">${project.name}</h3>
+        <p class="project-excerpt">${project.excerpt}</p>
+        <div class="project-card-footer">
+          <button type="button" class="project-detail-trigger" data-project-id="${project.id}">
+            View Scope &rarr;
+          </button>
+        </div>
+      </div>
+    </article>
+  `).join("");
+
+  // Bind modal triggers
+  grid.querySelectorAll(".project-detail-trigger").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      openProjectModal(btn.getAttribute("data-project-id"));
+    });
+  });
+}
+
+function openProjectModal(projectId) {
+  const project = portfolioProjects.find((p) => p.id === projectId);
+  const modal = document.getElementById("project-modal");
+  const body = document.getElementById("modal-body-content");
+  if (!project || !modal || !body) return;
+
+  const galleryHtml = project.gallery
+    .map((imgSrc, idx) => `<img src="${withAssetCache(imgSrc)}" alt="${project.name} view ${idx + 1}" />`)
+    .join("");
+
+  body.innerHTML = `
+    <span class="section-tag">${project.categoryLabel} &bull; ${project.status}</span>
+    <h2 class="section-title" id="modal-project-title">${project.name}</h2>
+    <p class="lead-text">${project.description}</p>
+
+    <div class="modal-specs-grid">
+      <div class="modal-spec-item">
+        <strong>Client / Status</strong>
+        <span>${project.client}</span>
+      </div>
+      <div class="modal-spec-item">
+        <strong>Delivery Model</strong>
+        <span>Turnkey Design &amp; Execution</span>
+      </div>
+    </div>
+
+    <div class="modal-gallery">${galleryHtml}</div>
+
+    <div class="about-pillars-grid">
+      <div class="about-card">
+        <h3>Scope of Work</h3>
+        <p>${project.scopeOfWork}</p>
+      </div>
+      <div class="about-card">
+        <h3>Design &amp; Execution Approach</h3>
+        <p>${project.designApproach} ${project.executionDetails}</p>
+      </div>
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="#contact" class="btn btn-primary modal-inquire-cta">Discuss a Similar Project</a>
+    </div>
+  `;
+
+  modal.hidden = false;
+  document.body.style.overflow = "hidden";
+
+  const cta = body.querySelector(".modal-inquire-cta");
+  if (cta) {
+    cta.addEventListener("click", closeProjectModal);
+  }
+}
+
+function closeProjectModal() {
+  const modal = document.getElementById("project-modal");
+  if (!modal) return;
+  modal.hidden = true;
+  document.body.style.overflow = "";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  renderPortfolio("all");
+
+  // Category filter buttons
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+      renderPortfolio(btn.getAttribute("data-filter"));
+    });
+  });
+
+  // Modal close handlers
+  const closeBtn = document.getElementById("modal-close");
+  const backdrop = document.getElementById("modal-backdrop");
+  if (closeBtn) closeBtn.addEventListener("click", closeProjectModal);
+  if (backdrop) backdrop.addEventListener("click", closeProjectModal);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeProjectModal();
+  });
+});
+
+
+/* ==========================================================================
+   LS CONSTRUCTIONS & INTERIORS — UI INTERACTIONS, FORMS & CONVERSION
+   ========================================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. Sticky Header & Back-to-Top Visibility
+  const header = document.getElementById("site-header");
+  const backToTop = document.getElementById("back-to-top");
+
+  function handleScroll() {
+    const scrollY = window.scrollY;
+    if (header) {
+      header.classList.toggle("scrolled", scrollY > 48);
+    }
+    if (backToTop) {
+      backToTop.classList.toggle("visible", scrollY > 520);
+    }
+  }
+  window.addEventListener("scroll", handleScroll, { passive: true });
+  handleScroll();
+
+  if (backToTop) {
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  // 2. Mobile Navigation Drawer
+  const navToggle = document.getElementById("nav-toggle");
+  const primaryNav = document.getElementById("primary-nav");
+
+  if (navToggle && primaryNav) {
+    navToggle.addEventListener("click", () => {
+      const isOpen = primaryNav.classList.toggle("open");
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    primaryNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        primaryNav.classList.remove("open");
+        navToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  // 3. Service-Specific Inquiry Pre-fill
+  const serviceBtns = document.querySelectorAll(".inquire-service-btn");
+  const categorySelect = document.getElementById("project-category");
+  const contactSection = document.getElementById("contact");
+
+  serviceBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const serviceName = btn.getAttribute("data-service");
+      if (categorySelect && serviceName) {
+        categorySelect.value = serviceName;
+      }
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          document.getElementById("client-name")?.focus();
+        }, 500);
+      }
+    });
+  });
+
+  // 4. Before & After Comparison Slider
+  const baRange = document.getElementById("ba-range");
+  const baBeforeLayer = document.getElementById("ba-before-layer");
+  const baHandle = document.getElementById("ba-handle");
+
+  if (baRange && baBeforeLayer && baHandle) {
+    baRange.addEventListener("input", (e) => {
+      const val = e.target.value;
+      baBeforeLayer.style.clipPath = `inset(0 ${100 - val}% 0 0)`;
+      baHandle.style.left = `${val}%`;
+    });
+  }
+
+  // 5. FAQ Accordion
+  const faqQuestions = document.querySelectorAll(".faq-question");
+  faqQuestions.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      faqQuestions.forEach((other) => {
+        other.setAttribute("aria-expanded", "false");
+        if (other.nextElementSibling) {
+          other.nextElementSibling.style.display = "none";
+        }
+      });
+      if (!expanded) {
+        btn.setAttribute("aria-expanded", "true");
+        if (btn.nextElementSibling) {
+          btn.nextElementSibling.style.display = "block";
+        }
+      }
+    });
+  });
+
+  // 6. Scroll Reveal Observer
+  const revealEls = document.querySelectorAll(".reveal-up");
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    revealEls.forEach((el) => observer.observe(el));
+  } else {
+    revealEls.forEach((el) => el.classList.add("is-visible"));
+  }
+
+  // 7. Contact Form Validation & WhatsApp Submission
+  const form = document.getElementById("project-inquiry-form");
+  const feedbackEl = document.getElementById("form-feedback");
+  const formWhatsappBtn = document.getElementById("form-whatsapp-btn");
+
+  function validateForm() {
+    let isValid = true;
+    const fields = [
+      { id: "client-name", errId: "error-name", msg: "Please enter your name." },
+      { id: "client-phone", errId: "error-phone", msg: "Please enter a valid phone number." },
+      { id: "client-email", errId: "error-email", msg: "Please enter a valid email address." },
+      { id: "project-location", errId: "error-location", msg: "Please specify the project location." },
+      { id: "project-category", errId: "error-category", msg: "Please select a project category." },
+      { id: "project-details", errId: "error-details", msg: "Please describe your project scope." }
+    ];
+
+    fields.forEach((f) => {
+      const input = document.getElementById(f.id);
+      const errSpan = document.getElementById(f.errId);
+      if (!input || !errSpan) return;
+
+      const val = input.value.trim();
+      let fieldValid = Boolean(val);
+
+      if (fieldValid && f.id === "client-email") {
+        fieldValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+      }
+      if (fieldValid && f.id === "client-phone") {
+        fieldValid = val.replace(/\D/g, "").length >= 8;
+      }
+
+      if (!fieldValid) {
+        errSpan.textContent = f.msg;
+        isValid = false;
+      } else {
+        errSpan.textContent = "";
+      }
+    });
+
+    return isValid;
+  }
+
+  function buildInquirySummary() {
+    const name = document.getElementById("client-name")?.value.trim() || "";
+    const phone = document.getElementById("client-phone")?.value.trim() || "";
+    const email = document.getElementById("client-email")?.value.trim() || "";
+    const location = document.getElementById("project-location")?.value.trim() || "";
+    const category = document.getElementById("project-category")?.value || "";
+    const budget = document.getElementById("project-budget")?.value || "";
+    const details = document.getElementById("project-details")?.value.trim() || "";
+
+    return `Project Inquiry - LS Constructions & Interiors%0A` +
+      `Name: ${encodeURIComponent(name)}%0A` +
+      `Phone: ${encodeURIComponent(phone)}%0A` +
+      `Email: ${encodeURIComponent(email)}%0A` +
+      `Location: ${encodeURIComponent(location)}%0A` +
+      `Category: ${encodeURIComponent(category)}%0A` +
+      `Estimated Budget: ${encodeURIComponent(budget)}%0A` +
+      `Scope: ${encodeURIComponent(details)}`;
+  }
+
+  if (form) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!validateForm()) {
+        if (feedbackEl) {
+          feedbackEl.className = "form-feedback error";
+          feedbackEl.textContent = "Please complete all highlighted fields before submitting.";
+        }
+        return;
+      }
+
+      if (feedbackEl) {
+        feedbackEl.className = "form-feedback success";
+        feedbackEl.textContent =
+          "Thank you. Your project inquiry has been validated and prepared. Our Chennai engineering team will reach out shortly.";
+      }
+      form.reset();
+    });
+  }
+
+  if (formWhatsappBtn) {
+    formWhatsappBtn.addEventListener("click", () => {
+      if (!validateForm()) {
+        if (feedbackEl) {
+          feedbackEl.className = "form-feedback error";
+          feedbackEl.textContent = "Please fill in your contact and project details before sending via WhatsApp.";
+        }
+        return;
+      }
+      const waNumber = typeof siteConfig !== "undefined" ? siteConfig.whatsappNumber : "910000000000";
+      const message = buildInquirySummary();
+      window.open(`https://wa.me/${waNumber}?text=${message}`, "_blank", "noopener,noreferrer");
+    });
+  }
+});
+
+  </script>
+</body>
+</html>
